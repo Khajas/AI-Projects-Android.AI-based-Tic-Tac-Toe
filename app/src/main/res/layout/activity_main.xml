@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="a1778291.cs.niu.edu.tictactoe.MainActivity"
+    android:background="@drawable/background11"
+    android:elevation="1dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/unmarked1"
+        android:layout_alignBottom="@+id/box1"
+        android:layout_toRightOf="@+id/box1"
+        android:layout_toEndOf="@+id/box1"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:clickable="true"
+        android:contentDescription="@string/box2"
+        android:id="@+id/box2"
+        android:layout_alignTop="@+id/box1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/unmarked1"
+        android:layout_alignTop="@+id/box4"
+        android:layout_alignLeft="@+id/box2"
+        android:layout_alignStart="@+id/box2"
+        android:id="@+id/box5"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/unmarked1"
+        android:layout_alignBottom="@+id/box5"
+        android:layout_alignLeft="@+id/box3"
+        android:layout_alignStart="@+id/box3"
+        android:id="@+id/box6"
+        android:clickable="true"
+        android:contentDescription="@string/box6" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/unmarked1"
+        android:layout_below="@+id/box4"
+        android:layout_alignLeft="@+id/box4"
+        android:layout_alignStart="@+id/box4"
+        android:layout_marginTop="35dp"
+        android:id="@+id/box7"
+        android:clickable="true"
+        android:contentDescription="@string/box7" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/unmarked1"
+        android:layout_alignTop="@+id/box7"
+        android:layout_alignLeft="@+id/box5"
+        android:layout_alignStart="@+id/box5"
+        android:id="@+id/box8"
+        android:clickable="true"
+        android:contentDescription="@string/box8" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/unmarked1"
+        android:layout_alignTop="@+id/box8"
+        android:layout_alignLeft="@+id/box6"
+        android:layout_alignStart="@+id/box6"
+        android:id="@+id/box9"
+        android:clickable="true"
+        android:contentDescription="@string/box9" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/unmarked1"
+        android:layout_marginTop="51dp"
+        android:id="@+id/box4"
+        android:clickable="true"
+        android:contentDescription="@string/box4"
+        android:layout_below="@+id/box1"
+        android:layout_alignLeft="@+id/box1"
+        android:layout_alignStart="@+id/box1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/unmarked1"
+        android:layout_marginTop="79dp"
+        android:clickable="true"
+        android:contentDescription="@string/box1"
+        android:id="@+id/box1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/onGoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textAlignment="viewStart"
+        android:fontFamily="monospace"
+        android:layout_alignBottom="@+id/msgStatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/box8"
+        android:layout_alignStart="@+id/box8" />
+
+    <TextView
+        android:text="@string/lblLosses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblLoss"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/labelWins"
+        android:layout_alignLeft="@+id/labelWins"
+        android:layout_alignStart="@+id/labelWins"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:text="@string/tvLosses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLoss"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignBaseline="@+id/lblLoss"
+        android:layout_alignBottom="@+id/lblLoss"
+        android:layout_alignLeft="@+id/tvWins"
+        android:layout_alignStart="@+id/tvWins" />
+
+    <TextView
+        android:text="@string/lblWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelWins"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_below="@+id/msgStatus"
+        android:layout_alignLeft="@+id/msgStatus"
+        android:layout_alignStart="@+id/msgStatus" />
+
+    <TextView
+        android:text="@string/tvWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWins"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="@string/lblDraws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelWins"
+        android:layout_alignLeft="@+id/lblLoss"
+        android:layout_alignStart="@+id/lblLoss"
+        android:id="@+id/lblDraw"
+        android:textColor="@android:color/holo_green_light" />
+
+    <TextView
+        android:text="@string/tvDraws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblDraw"
+        android:layout_alignLeft="@+id/tvWins"
+        android:layout_alignStart="@+id/tvWins"
+        android:id="@+id/tvDraws"
+        android:textColor="@android:color/holo_green_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msgStatus"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp"
+        android:text="@string/msgStatus"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/box7"
+        android:layout_alignRight="@+id/box7"
+        android:layout_alignEnd="@+id/box7" />
+
+    <Button
+        android:text="@string/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnQuit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@android:color/holo_red_dark"
+        android:elevation="0dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/lblLoss"
+        android:layout_alignLeft="@+id/lblLoss"
+        android:layout_alignStart="@+id/lblLoss"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:text="@string/rst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRst"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@android:color/holo_green_light"
+        android:layout_alignTop="@+id/btnQuit"
+        android:layout_alignRight="@+id/box9"
+        android:layout_alignEnd="@+id/box9" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/unmarked1"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        android:id="@+id/box3"
+        android:clickable="true"
+        android:contentDescription="@string/box3"
+        android:layout_alignTop="@+id/box2"
+        android:layout_toRightOf="@+id/box2"
+        android:layout_toEndOf="@+id/box2" />
+
+</RelativeLayout>

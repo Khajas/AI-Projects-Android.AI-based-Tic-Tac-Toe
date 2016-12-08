@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="box1">b1</string>
+    <string name="box2">b2</string>
+    <string name="box3">b3</string>
+    <string name="box4">b4</string>
+    <string name="box5">b5</string>
+    <string name="box6">b6</string>
+    <string name="box7">b7</string>
+    <string name="box8">b8</string>
+    <string name="box9">b9</string>
+    <string name="onGoing">On Going</string>
+    <string name="msgStatus">Status</string>
+    <string name="p1Win">Player1 Wins!</string>
+    <string name="p2Win">Player2 Wins!</string>
+    <string name="rst">Restart</string>
+    <string name="quit">Exit</string>
+    <string name="lblWins">Wins</string>
+    <string name="lblLosses">Losses</string>
+    <string name="lblDraws">Draws</string>
+    <string name="tvWins">0</string>
+    <string name="tvDraws">0</string>
+    <string name="tvLosses">0</string>
+</resources>
